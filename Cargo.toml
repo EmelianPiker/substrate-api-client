@@ -1,6 +1,6 @@
 [package]
 name = "substrate-api-client"
-version = "0.4.6-sub2.0.0-rc.4"
+version = "0.4.6-sub2.0.0-rc.5-rococo"
 authors = ["Supercomputing Systems AG <info@scs.ch>"]
 edition = "2018"
 
@@ -16,8 +16,7 @@ primitive-types = { version = "0.6.1", optional = true, features = ["codec"] }
 
 [dependencies.sp-core]
 git = 'https://github.com/paritytech/substrate.git'
-tag = 'v2.0.0-rc4'
-version = '2.0.0-rc4'
+branch = "rococo-branch"
 package = "sp-core"
 default-features = false
 features = ["full_crypto"]
@@ -30,62 +29,58 @@ default-features = false
 
 [dependencies.runtime_io]
 git = 'https://github.com/paritytech/substrate.git'
-tag = 'v2.0.0-rc4'
-version = '2.0.0-rc4'
+branch = "rococo-branch"
 package = "sp-io"
 default-features=false
 
 [dependencies.metadata]
-version = '11.0.0-alpha.7'
+git = 'https://github.com/paritytech/substrate.git'
+#version = '11.0.0-alpha.7'
 package = "frame-metadata"
+branch = "rococo-branch"
 default-features=false
 
 [dependencies.sp-version]
 git = 'https://github.com/paritytech/substrate.git'
-tag = 'v2.0.0-rc4'
-version = '2.0.0-rc4'
+branch = "rococo-branch"
 package = "sp-version"
 default-features=false
 
 [dependencies.balances]
 git = 'https://github.com/paritytech/substrate.git'
-tag = 'v2.0.0-rc4'
-version = '2.0.0-rc4'
+branch = "rococo-branch"
 package = "pallet-balances"
 default-features=false
 
 [dependencies.system]
 git = 'https://github.com/paritytech/substrate.git'
-tag = 'v2.0.0-rc4'
-version = '2.0.0-rc4'
+branch = "rococo-branch"
 package = "frame-system"
 default-features=false
 
 [dependencies.sp-runtime]
 git = 'https://github.com/paritytech/substrate.git'
-tag = 'v2.0.0-rc4'
-version = '2.0.0-rc4'
+branch = "rococo-branch"
 package = "sp-runtime"
 default-features=false
 
 [dependencies.support]
 git = 'https://github.com/paritytech/substrate.git'
-tag = 'v2.0.0-rc4'
-version = '2.0.0-rc4'
+branch = "rococo-branch"
 package = "frame-support"
 default-features=false
 
 [dependencies.sp-std]
 git = 'https://github.com/paritytech/substrate.git'
-tag = 'v2.0.0-rc4'
-version = '2.0.0-rc4'
+branch = "rococo-branch"
 package = "sp-std"
 default-features = false
 
 [dependencies.sc-rpc-api]
 git = 'https://github.com/paritytech/substrate.git'
 #tag = '0.8.0-rc4'
-tag = 'v2.0.0-rc4'
+#tag = 'v2.0.0-rc4'
+branch = "rococo-branch"
 #version = '0.8.0-rc4'
 package = "sc-rpc-api"
 #version = '0.8.0-alpha.7'
@@ -101,14 +96,12 @@ wabt = "0.9.0"
 
 [dev-dependencies.contracts]
 git = 'https://github.com/paritytech/substrate.git'
-tag = 'v2.0.0-rc4'
-version = '2.0.0-rc4'
+branch = "rococo-branch"
 package = "pallet-contracts"
 
 [dev-dependencies.keyring]
 git = 'https://github.com/paritytech/substrate.git'
-tag = 'v2.0.0-rc4'
-version = '2.0.0-rc4'
+branch = "rococo-branch"
 package = "sp-keyring"
 
 [dev-dependencies.clap]
